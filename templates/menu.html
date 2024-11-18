@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>{% block title %}Игровая платформа{% endblock %}</title>
+</head>
+<h1>{{ pagename }}</h1>
+
+<ul>
+
+        <li><a href="/platform">Главная</a></li>
+        <li><a href="/platform/games/">Магазин</a></li>
+        <li><a href="/platform/cart/">Корзина</a></li>
+
+</ul>
+<body>
+<div>
+    <h2>{% block pagename %} {% endblock %}</h2>
+         {% block content %}{% endblock %}
+</div>
+
+
+</body>
+</html>

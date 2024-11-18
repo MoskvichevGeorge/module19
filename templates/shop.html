@@ -1,0 +1,14 @@
+{% extends "menu.html" %}
+
+
+{% block content %}
+
+<ul>
+    {% for game in games %}
+     <p>{{ game }} | {{ game.description }}  Стоимость: {{ game.cost }} <button>Купить</button></p>
+ {% endfor %}
+</ul>
+
+<a href="/platform"><button>На главную</button></a>
+{% endblock %}
+
